@@ -12,9 +12,11 @@
   --emphasis-color: #2196f3;
   --page-background-color: #ffffff;
   --hero-title-color: #ffffff;
-  --hero-background-color: #2f303a;
+  --hero-background-color: #c4c4c4;
+  --footer-background-color: #2f303a;
   --adress-links-text-color: rgba(255, 255, 255, 0.6);
   --crew-background-color: #f5f4fa;
+  --icons-gray: #afb1b8;
 }
 
 /* Page general styles */
@@ -126,12 +128,30 @@ body {
 .adress-nav .link:focus {
   color: var(--emphasis-color);
 }
-
+.contacts-icon {
+  display: inline-block;
+  margin-right: 10px;
+  --color2: var(--icons-gray);
+  --color3: var(--icons-gray);
+}
 /* Hero section styles */
 .hero {
+  width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-background-image.jpg);
   background-color: var(--hero-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
 }
 .hero-title {
@@ -242,9 +262,43 @@ body {
   margin-bottom: 30px;
 }
 
+/* regular-clients section styles */
+.regular-clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regular-clients-list .item {
+  /* display: inline-block; */
+}
+.regular-clients-list .link {
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  color: var(--icons-gray);
+  border-radius: 4px;
+  align-content: center;
+}
+.regular-clients-list .item + .item {
+  margin-left: 30px;
+}
+.company-logo {
+  --color3: var(--icons-gray);
+  --color2: var(--icons-gray);
+}
+.regular-clients-list .link:focus,
+.regular-clients-list .link:hover {
+  border: 1px solid var(--emphasis-color);
+}
+.company-logo:hover,
+.company-logo:focus {
+  --color3: var(--emphasis-color);
+  --color2: var(--emphasis-color);
+}
 /* Footer Styles */
 .footer {
-  background-color: var(--hero-background-color);
+  background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -273,6 +327,9 @@ body {
 }
 
 /* Portfolio.html personal styles */
+.header {
+  border: 1px solid #ececec;
+}
 .our-projects-nav {
   display: flex;
   margin-bottom: 50px;

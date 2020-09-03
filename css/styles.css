@@ -366,12 +366,12 @@ body {
 }
 .footer-flexbox {
   display: flex;
+  align-items: center;
 }
 .join-us {
   margin-left: 70px;
 }
 .join-us .text {
-  margin-top: 12px;
   margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;

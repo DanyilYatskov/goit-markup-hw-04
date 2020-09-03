@@ -122,17 +122,19 @@ body {
   margin-left: 50px;
 }
 .adress-nav .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--main-text-color);
 }
 .adress-nav .link:hover,
 .adress-nav .link:focus {
   color: var(--emphasis-color);
 }
-.contacts-icon {
-  display: inline-block;
+.adress-nav .link .contacts-icon {
   margin-right: 10px;
-  --color2: var(--icons-gray);
-  --color3: var(--icons-gray);
+  --color2: currentColor;
+  --color5: currentColor;
 }
 /* Hero section styles */
 .hero {
@@ -261,41 +263,40 @@ body {
 .our-crew .text {
   margin-bottom: 30px;
 }
-
+.social-links-list .list .social-icon {
+  --color4: currentColor;
+}
 /* regular-clients section styles */
 .regular-clients-list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.regular-clients-list .item {
-  /* display: inline-block; */
-}
 .regular-clients-list .link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   color: var(--icons-gray);
   border-radius: 4px;
-  align-content: center;
 }
 .regular-clients-list .item + .item {
   margin-left: 30px;
 }
-.company-logo {
-  --color3: var(--icons-gray);
-  --color2: var(--icons-gray);
+.regular-clients-list .link .company-logo {
+  /* --color3: var(--icons-gray);
+  --color2: var(--icons-gray); */
+  --color2: currentColor;
+  --color3: currentColor;
 }
 .regular-clients-list .link:focus,
 .regular-clients-list .link:hover {
   border: 1px solid var(--emphasis-color);
+  color: var(--emphasis-color);
 }
-.company-logo:hover,
-.company-logo:focus {
-  --color3: var(--emphasis-color);
-  --color2: var(--emphasis-color);
-}
+
 /* Footer Styles */
 .footer {
   background-color: var(--footer-background-color);

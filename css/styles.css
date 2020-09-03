@@ -17,6 +17,7 @@
   --adress-links-text-color: rgba(255, 255, 255, 0.6);
   --crew-background-color: #f5f4fa;
   --icons-gray: #afb1b8;
+  --footer-icons-background: rgba(255, 255, 255, 0.1);
 }
 
 /* Page general styles */
@@ -275,7 +276,7 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 50%;
 
   color: var(--icons-gray);
@@ -292,6 +293,7 @@ body {
   --color4: currentColor;
   --color3: currentColor;
 }
+
 /* regular-clients section styles */
 .regular-clients-list {
   display: flex;
@@ -352,7 +354,33 @@ body {
 .footer-adress-nav .item:not(:last-child) {
   margin-bottom: 9px;
 }
-
+.footer-flexbox {
+  display: flex;
+}
+.join-us {
+  margin-left: 70px;
+}
+.join-us .text {
+  margin-top: 12px;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.join-us .social-links-list .link {
+  background-color: var(--footer-icons-background);
+  color: #fff;
+}
+.join-us .social-links-list .link:hover,
+.join-us .social-links-list .link:focus {
+  background-color: var(--emphasis-color);
+  color: #fff;
+}
 /* Portfolio.html personal styles */
 .header {
   border: 1px solid #ececec;

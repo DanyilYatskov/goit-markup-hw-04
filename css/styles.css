@@ -261,10 +261,36 @@ body {
   margin-left: 30px;
 }
 .our-crew .text {
+  margin-bottom: 16px;
+}
+.social-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
 }
-.social-links-list .list .social-icon {
+.social-links-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-radius: 50%;
+
+  color: var(--icons-gray);
+}
+.social-links-list .social-item + .social-item {
+  margin-left: 10px;
+}
+.social-links-list .link:hover,
+.social-links-list .link:focus {
+  background-color: var(--emphasis-color);
+  color: white;
+}
+.social-links-list .link .social-icon {
   --color4: currentColor;
+  --color3: currentColor;
 }
 /* regular-clients section styles */
 .regular-clients-list {
